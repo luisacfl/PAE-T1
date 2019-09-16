@@ -1,0 +1,11 @@
+@import "./variables";
+@import "./mixins";
+@import "./header";
+@import "./grid";
+
+body{
+    margin: 0%;
+}
+.hero-banner{
+    @include flexCenter(row, $primaryBtn, 40vh);
+}

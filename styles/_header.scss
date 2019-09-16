@@ -1,0 +1,9 @@
+header {
+    @include flexCenter(row, yellow, 10vh);
+    button{
+        background: $primaryBtn;
+        &:hover{
+            background: $primaryColor
+        }
+    }
+}
