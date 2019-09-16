@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 header {
   height: 10vh;
   display: -webkit-box;
@@ -99,6 +100,8 @@ header button:hover {
 
 body {
   margin: 0%;
+  font-family: "Lato";
+  font-weight: normal;
 }
 
 .hero-banner {

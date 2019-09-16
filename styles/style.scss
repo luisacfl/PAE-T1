@@ -5,6 +5,8 @@
 
 body{
     margin: 0%;
+    font-family: $font-body;
+    font-weight: normal;
 }
 .hero-banner{
     @include flexCenter(row, $primaryBtn, 40vh);
