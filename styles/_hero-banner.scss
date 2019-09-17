@@ -1,5 +1,5 @@
 .hero-banner{
-    @include flex(row, $secondaryColor, 50vh, center, center);
+    @include flex(row, $secondaryColor, 90vh, center, center);
 
     @media screen and (max-width: $phone-max){
         background-image: url('../img/hero-img-example.jpg');
