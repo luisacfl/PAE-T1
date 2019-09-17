@@ -1,3 +1,28 @@
 .hero-banner{
     @include flex(row, $secondaryColor, 50vh, center, center);
+
+    @media screen and (max-width: $phone-max){
+        background-image: url('../img/hero-img-example.jpg');
+        background-size: cover;
+        background-position: center center;
+
+        video{
+            display: none;
+        }   
+    }
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+        background-image: url('../img/hero-img-example.jpg');
+        background-size: cover;
+        background-position: center center;
+
+        video{
+            display: none;
+        }    
+    }
+    @media screen and (min-width: $desktop-min){
+        video{
+            //width:100%;
+            height: 50vh;
+        }
+    }
 }

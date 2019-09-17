@@ -177,6 +177,34 @@ header {
   padding: 1vh 2vw;
 }
 
+@media screen and (max-width: 678px) {
+  .hero-banner {
+    background-image: url("../img/hero-img-example.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  .hero-banner video {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 679px) and (max-width: 1199px) {
+  .hero-banner {
+    background-image: url("../img/hero-img-example.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  .hero-banner video {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-banner video {
+    height: 50vh;
+  }
+}
+
 body {
   margin: 0%;
   font-family: "Lora";
