@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     background: $secondaryBtn;
     padding: 1vh 2vw;
     [class*="-section"] {
@@ -35,12 +35,12 @@
         }
     }
     @media screen and (max-width: $phone-max){
-        flex-direction: column;
     }
     @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
   
     }
     @media screen and (min-width: $desktop-min){
+        flex-direction: row;
         .text-section{
             padding: 5vw;
             p{
