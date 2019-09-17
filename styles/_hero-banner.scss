@@ -1,0 +1,3 @@
+.hero-banner{
+    @include flex(row, $secondaryColor, 50vh, center, center);
+}

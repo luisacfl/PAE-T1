@@ -1,13 +1,12 @@
 @import "./variables";
+@import "./grid";
 @import "./mixins";
 @import "./header";
-@import "./grid";
+@import "./hero-banner";
+
 
 body{
     margin: 0%;
-    font-family: $font-body;
+    font-family: $font-header;
     font-weight: normal;
-}
-.hero-banner{
-    @include flex(row, $secondaryColor, 40vh, center, center);
 }

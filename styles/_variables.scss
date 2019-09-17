@@ -1,12 +1,25 @@
 //Fonts
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-$font-body: 'Lato';
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Lora&display=swap');
+$font-header: 'Lora';
+$font-body: 'Crimson Text';
 
 //Color variables
-$primaryColor: white;
-$secondaryColor: lightblue;
-$primaryBtn : orange;
-$secondaryBtn: pink;
+$primaryColor: #011936;
+$secondaryColor: #2D2D31;
+$primaryBtn : #BA8B00;
+$secondaryBtn: #ECE4B7;
+
+$primaryHeaderColor: white;
+$secondaryHeaderColor: #BA8B00;
+//red #720500;
+
+$bodyColor: #020202;
 
 //Grid variables
 $grid-spacing:0%;
+
+//Media sizes
+$desktop-min: 1200px;
+$tablet-max: 1199px;
+$tablet-min: 679px;
+$phone-max: 678px;

@@ -8,3 +8,28 @@
     background: $background;
     padding: 1vh 2vw
 }
+
+@mixin button-primary {
+    color:$primaryHeaderColor;
+    background-color: $primaryColor;
+    font-family: $font-header;
+    font-size: 1.8vh;
+
+    border: 2px solid $primaryBtn;
+
+    height: 5vh;
+    margin: 1vw;
+
+    align-items: center;
+    justify-content: center;
+
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+    &:hover{
+        background-color: $primaryBtn;
+        color:$primaryHeaderColor;
+    }
+
+}

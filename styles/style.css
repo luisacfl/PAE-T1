@@ -1,49 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-header {
-  height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background: white;
-  padding: 1vh 2vw;
-}
-
-header .logo img {
-  height: 7vh;
-}
-
-header .head-links {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-header .head-links a {
-  padding: 1vw;
-}
-
-header .head-links a:hover {
-  color: lightblue;
-}
-
-header .head-buttons button {
-  background: orange;
-}
-
-header .head-buttons button:hover {
-  background: lightblue;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Lora&display=swap");
 .row:after {
   display: block;
   clear: both;
@@ -117,14 +72,94 @@ header .head-buttons button:hover {
   width: 100%;
 }
 
-body {
-  margin: 0%;
-  font-family: "Lato";
-  font-weight: normal;
+header {
+  color: white;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #011936;
+  padding: 1vh 2vw;
+}
+
+@media screen and (max-width: 678px) {
+  header .logo img {
+    height: 5vh;
+  }
+  header .head-links {
+    display: none;
+  }
+  header .head-buttons {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 679px) and (max-width: 1199px) {
+  header .logo img {
+    height: 6vh;
+  }
+  header .head-links {
+    display: none;
+  }
+  header .head-buttons {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header .logo img {
+    height: 7vh;
+  }
+  header .head-links {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .head-links a {
+    padding: 1vw;
+  }
+  header .head-links a:hover {
+    color: #BA8B00;
+  }
+  header .head-buttons button {
+    color: white;
+    background-color: #011936;
+    font-family: "Lora";
+    font-size: 1.8vh;
+    border: 2px solid #BA8B00;
+    height: 5vh;
+    margin: 1vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+  }
+  header .head-buttons button:hover {
+    background-color: #BA8B00;
+    color: white;
+  }
+  header .head-buttons input {
+    height: 3vh;
+  }
 }
 
 .hero-banner {
-  height: 40vh;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,7 +173,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: lightblue;
+  background: #2D2D31;
   padding: 1vh 2vw;
+}
+
+body {
+  margin: 0%;
+  font-family: "Lora";
+  font-weight: normal;
 }
 /*# sourceMappingURL=style.css.map */

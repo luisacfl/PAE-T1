@@ -1,26 +1,59 @@
 header {
+    color: $primaryHeaderColor;
     @include flex(row, $primaryColor, 10vh, space-between, center);
-    .logo {
-        img{
-            height: 7vh;
-        }
-    }
-    .head-links{
-        justify-content: space-between;
-        a{
-            padding: 1vw;
-            &:hover{
-                color: $secondaryColor;
-            }
-        }
-    }
-    .head-buttons{
-        button{
-            background: $primaryBtn;
-            &:hover{
-                background: $secondaryColor;
-            }
-        }
-    }
 
+    @media screen and (max-width: $phone-max){
+        .logo {
+            img {
+                height: 5vh;
+            }
+        }
+        .head-links{
+            display: none;
+        }
+        .head-buttons{
+            display: none;
+        }
+    }
+    
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+        .logo {
+            img {
+                height: 6vh;
+            }
+        }
+        .head-links{
+            display: none;
+        }
+        .head-buttons{
+            display: none;
+        }
+    }
+    @media screen and (min-width: $desktop-min){
+        .logo {
+            img {
+                height: 7vh;
+            }
+        }
+        .head-links {
+            justify-content: space-between;
+    
+            a {
+                padding: 1vw;
+    
+                &:hover {
+                    color: $secondaryHeaderColor;
+                }
+            }
+        }
+        .head-buttons {
+            button {
+                @include button-primary;
+            }
+    
+            input {
+                height: 3vh;
+            }
+        }
+    }
 }
