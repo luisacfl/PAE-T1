@@ -93,6 +93,9 @@ header {
 }
 
 @media screen and (max-width: 678px) {
+  header .mobile-menu input {
+    height: 6vh;
+  }
   header .logo img {
     height: 5vh;
   }
@@ -105,6 +108,9 @@ header {
 }
 
 @media screen and (min-width: 679px) and (max-width: 1199px) {
+  header .mobile-menu input {
+    height: 6vh;
+  }
   header .logo img {
     height: 6vh;
   }
@@ -117,6 +123,9 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
+  header .mobile-menu {
+    display: none;
+  }
   header .logo img {
     height: 7vh;
   }
