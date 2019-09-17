@@ -1,8 +1,10 @@
-@mixin flexCenter($direction, $background, $h) {
+
+@mixin flex($direction, $background, $h, $flex-x, $flex-y) {
     height: $h;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: $flex-x;
+    align-items: $flex-y;
     flex-direction: $direction;
     background: $background;
+    padding: 1vh 2vw
 }

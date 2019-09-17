@@ -1,9 +1,26 @@
 header {
-    @include flexCenter(row, yellow, 10vh);
-    button{
-        background: $primaryBtn;
-        &:hover{
-            background: $primaryColor
+    @include flex(row, $primaryColor, 10vh, space-between, center);
+    .logo {
+        img{
+            height: 7vh;
         }
     }
+    .head-links{
+        justify-content: space-between;
+        a{
+            padding: 1vw;
+            &:hover{
+                color: $secondaryColor;
+            }
+        }
+    }
+    .head-buttons{
+        button{
+            background: $primaryBtn;
+            &:hover{
+                background: $secondaryColor;
+            }
+        }
+    }
+
 }

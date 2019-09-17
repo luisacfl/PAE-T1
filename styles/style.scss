@@ -9,5 +9,5 @@ body{
     font-weight: normal;
 }
 .hero-banner{
-    @include flexCenter(row, $primaryBtn, 40vh);
+    @include flex(row, $secondaryColor, 40vh, center, center);
 }

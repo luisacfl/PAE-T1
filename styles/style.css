@@ -4,9 +4,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -14,15 +14,34 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: yellow;
+  background: white;
+  padding: 1vh 2vw;
 }
 
-header button {
-  background: #34688f;
+header .logo img {
+  height: 7vh;
 }
 
-header button:hover {
-  background: red;
+header .head-links {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .head-links a {
+  padding: 1vw;
+}
+
+header .head-links a:hover {
+  color: lightblue;
+}
+
+header .head-buttons button {
+  background: orange;
+}
+
+header .head-buttons button:hover {
+  background: lightblue;
 }
 
 .row:after {
@@ -119,6 +138,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: #34688f;
+  background: lightblue;
+  padding: 1vh 2vw;
 }
 /*# sourceMappingURL=style.css.map */
